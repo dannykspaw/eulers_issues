@@ -21,3 +21,18 @@ for i in range(x, 3, -2):
         print(i)
         break
 print('The number is prime and has no prime factors.')
+
+prime_factors = []
+for i in range(2, x):
+    if (
+        x % i == 0 and prime_finder(i) == True
+        ):
+        prime_factors.append(i)
+        print(i)
+        product = 1
+        for i in range(len(prime_factors)):
+            product = product * prime_factors[i]
+            if product == x:
+                break
+        
+
