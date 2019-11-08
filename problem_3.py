@@ -29,10 +29,10 @@ for i in range(2, x):
         ):
         prime_factors.append(i)
         print(i)
-        product = 1
-        for i in range(len(prime_factors)):
-            product = product * prime_factors[i]
-            if product == x:
-                break
+print(prime_factors)
+#        product = 1
+#        for i in range(len(prime_factors)):
+#            product = product * prime_factors[i]
+#            if product == x:
+#                break
         
-
